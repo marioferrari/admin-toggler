@@ -1,0 +1,24 @@
+# IDE / editor
+.vscode/
+node_modules/
+
+# Build / packaged output
+dist/
+build/
+
+# Environment / secrets
+.env*
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Packaged extension artifacts
+*.zip
+manifest.json
+
+# Original images
+icons/

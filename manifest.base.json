@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Admin Toggler",
+  "version": "0.1.0",
+  "description": "Toggles admin mode for your web app. Right-click links to open them in admin mode.",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "contextMenus",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "action": {
+    "default_icon": "icon-default.png",
+    "default_title": "Toggle Admin Mode"
+  },
+  "commands": {
+    "toggle-admin": {
+      "suggested_key": {
+        "default": "Alt+A"
+      },
+      "description": "Toggle admin mode on current page"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "48": "icon-default.png"
+  }
+}
