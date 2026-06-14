@@ -24,7 +24,7 @@ Note: Currently, the `Ctrl+Alt+click` modifier cannot be customized from the opt
 
 ## Installing
 
-This extension isn't published to the browser extension stores. You'll need to download the latest release for your browser and install it manually.
+This extension isn't published to the browser extension stores. You'll need to [download the latest release](https://github.com/marioferrari/admin-toggler/releases) for your browser and install it manually.
 
 ### Chrome
 
